@@ -1,9 +1,9 @@
-import Button from "./btn";
+import Student from "./student";
 
 function App() {
   return (
     <>
-      <Button />
+      <Student name = "Ahmad" age = {15}/>
     </>
   );
 }
