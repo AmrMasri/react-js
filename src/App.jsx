@@ -1,9 +1,9 @@
-import Student from "./student";
+import List from "./list.jsx";
 
 function App() {
   return (
     <>
-      <Student name = "Ahmad" age = {15}/>
+  <List/>
     </>
   );
 }
