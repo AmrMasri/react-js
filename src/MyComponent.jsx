@@ -17,18 +17,30 @@ function MyComponent(){
     }
 
     function handleYearChange(event){
-
+        setCarYear(event.target.value)
     }
 
     function handleMakeChange(event){
-
+        setCarMake(event.target.value)
     }
 
     function handleModelChange(event){
-
+        setCarModel(event.target.value)
     }
 
-    return(<></>);
+    return(<div>
+        <h2>List of car objects</h2>
+        <ul>
+
+        </ul>
+
+        <input type="number" value={carYear} onChange={handleYearChange}/><br />
+        <input type="text" value={carMake} onChange={handleMakeChange} placeholder="Enter car make"/><br />
+        <input type="text" value={carModel} onChange={handleModelChange} placeholder="Enter car model"/><br />
+
+        <button>Add Car</button>
+
+    </div>);
 
 }
 export default MyComponent ;
