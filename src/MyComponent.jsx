@@ -7,7 +7,7 @@ function MyComponent(){
 
     useEffect(() => {
         document.title = `count : ${count} ${color}`
-    }, [count]);
+    }, [count, color]);
 
 
 
