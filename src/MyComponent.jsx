@@ -11,9 +11,13 @@ function MyComponent(){
 
         return() => {
             window.removeEventListener("resize", handleResize);
-            console.log("Event Listner Removed")
+            console.log("Event Listener Removed")
         }
     }, [])
+
+    useEffect(() => {
+        document.title = `Size : ${width} x : ${Height}`
+    }, [width, Height])
 
     function handleResize(){
         setWidth(window.innerWidth)
