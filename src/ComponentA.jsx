@@ -1,6 +1,9 @@
+import { useState } from "react";
 import ComponentB from "./ComponentB";
 
 function ComponentA(){
+
+    const [user, setUser] = useState("Amr")
 
     return(
         <div className="box">
