@@ -2,19 +2,24 @@ import { useState, useEffect, useRef } from "react";
 
 function MyComponent (){
 
-    let [number , setNumber] = useState(0);
+    const inputRef = useRef(null);
 
     useEffect(() => {
         console.log("Component Rendered");
+        console.log(inputRef)
     })
 
     function handleClick(){
-        setNumber(n => n + 1);
+        inputRef.current.focus();
     }
 
     return(
+        <div>
         <button onClick={handleClick}>
             Click me!
-        </button>);
+        </button>
+        <input ref={inputRef} />
+        </div>
+    );
 }
 export default MyComponent
