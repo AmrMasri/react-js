@@ -8,7 +8,7 @@ function MyComponent (){
 
 
     useEffect(() => {
-        console.log("Component Rendered");
+        console.log("Component Rendered ");
     })
 
     function handleClick1(){
