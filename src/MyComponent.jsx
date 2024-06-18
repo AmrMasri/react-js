@@ -50,6 +50,7 @@ function MyComponent (){
         <button onClick={handleClick3}>
             Click me 3 !
         </button>
+        <input ref={inputRef3} /> 
         </div>
     );
 }
