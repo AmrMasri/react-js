@@ -46,11 +46,12 @@ function MyComponent (){
             Click me 2 !
         </button>
         <input ref={inputRef2} /> 
-        
+
         <button onClick={handleClick3}>
             Click me 3 !
         </button>
         <input ref={inputRef3} /> 
+        
         </div>
     );
 }
