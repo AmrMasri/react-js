@@ -47,7 +47,6 @@ function MyComponent (){
         </button>
         <input ref={inputRef2} /> 
 
-        <button onClick={handleClick3}>
             Click me 3 !
         </button>
         <input ref={inputRef3} /> 
