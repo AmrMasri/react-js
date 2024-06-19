@@ -1,7 +1,10 @@
+import HomePage from "./HomePage";
 import MyComponent from "./MyComponent";
+import {createBrowserRouter} from 'react-router-dom'
 
 function App() {
-  return (<MyComponent/>);
+  const router =createBrowserRouter([])
+  return (<HomePage/>);
   
 }
 
