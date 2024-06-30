@@ -3,6 +3,7 @@ import { Home } from "./pages/Home";
 import { BookList } from "./pages/BookLIst";
 import { Book } from "./pages/Book";
 import { NewBook } from "./pages/NewBook";
+import { NotFound } from "./pages/NotFound";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Books" element={<BookList />} />
         <Route path="/Books/:id" element={<Book />} />
         <Route path="/Books/new" element={<NewBook />} />
+        <Route path="*" element={<NotFound />}/>
       </Routes>
     </>
   );
