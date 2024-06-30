@@ -1,7 +1,8 @@
-import { Link ,Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { BookList } from "./pages/BookLIst";
 import { Book } from "./pages/Book";
+import { NewBook } from "./pages/NewBook";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Books" element={<BookList />} />
         <Route path="/Books/:id" element={<Book />} />
+        <Route path="/Books/new" element={<NewBook />} />
       </Routes>
     </>
   );
