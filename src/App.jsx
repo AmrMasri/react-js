@@ -9,6 +9,9 @@ import { BookLayout } from "./pages/BookLayout";
 function App() {
   return (
     <>
+      <Routes>
+        <Route path="/books" element={ <h1>Extra Content</h1>} />
+      </Routes>
       <nav>
         <ul>
           <li>
@@ -21,19 +24,18 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/books" element={<BookLayout/>}>
-          <Route index element={<BookList/>}/>
-          <Route path=":id" element = {<Book/>}/>
-          <Route path="new" element = {<NewBook/>}/>
+        <Route path="/books" element={<BookLayout />}>
+          <Route index element={<BookList />} />
+          <Route path=":id" element={<Book />} />
+          <Route path="new" element={<NewBook />} />
         </Route>
-   { /*  <Route path="/Books" element={<BookList />} />
+        {/*  <Route path="/Books" element={<BookList />} />
       <Route path="/Books/:id" element={<Book />} />
-      <Route path="/Books/new" element={<NewBook />} /> */ }
-        <Route path="*" element={<NotFound />}/>
+      <Route path="/Books/new" element={<NewBook />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
 }
-
 
 export default App;
