@@ -20,9 +20,13 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Books" element={<BookList />} />
-        <Route path="/Books/:id" element={<Book />} />
-        <Route path="/Books/new" element={<NewBook />} />
+        <Route path="/books" >
+          <Route path=":id" element = {<Book/>}/>
+          <Route path="new" element = {<NewBook/>}/>
+        </Route>
+   { /*  <Route path="/Books" element={<BookList />} />
+      <Route path="/Books/:id" element={<Book />} />
+      <Route path="/Books/new" element={<NewBook />} /> */ }
         <Route path="*" element={<NotFound />}/>
       </Routes>
     </>
