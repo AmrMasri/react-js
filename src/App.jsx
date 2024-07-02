@@ -21,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/books" >
+          <Route index element={<BookList/>}/>
           <Route path=":id" element = {<Book/>}/>
           <Route path="new" element = {<NewBook/>}/>
         </Route>
